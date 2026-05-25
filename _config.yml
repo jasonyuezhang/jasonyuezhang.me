@@ -1,0 +1,44 @@
+title: Jason Yue Zhang
+author: Jason Yue Zhang
+email:
+description: >-
+  Notes on software, systems, and the work behind building useful things.
+baseurl: ""
+url: "https://jasonyuezhang.me"
+lang: en
+timezone: America/Los_Angeles
+
+github_username: jasonyuezhang
+
+header_pages:
+  - about.markdown
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: /:year/:month/:day/:title/
+
+minima:
+  date_format: "%b %-d, %Y"
+
+giscus:
+  enabled: false
+  repo: "jasonyuezhang/jasonyuezhang.me"
+  repo_id:
+  category: "Announcements"
+  category_id:
+  mapping: "pathname"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "preferred_color_scheme"
+  lang: "en"
+
+# Exclude from processing.
+exclude:
+  - README.md
+  - vendor/

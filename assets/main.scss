@@ -1,0 +1,23 @@
+---
+---
+
+@import "minima";
+
+.site-title,
+.site-title:visited {
+  font-weight: 700;
+}
+
+.post-content {
+  line-height: 1.75;
+}
+
+.post-content h2 {
+  margin-top: 2rem;
+}
+
+.comments {
+  border-top: 1px solid $grey-color-light;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
