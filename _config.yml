@@ -1,5 +1,5 @@
-title: Jason Yue Zhang
-author: Jason Yue Zhang
+title: Jason (Yue) Zhang
+author: Jason (Yue) Zhang
 email:
 description: >-
   Notes on software, systems, and the work behind building useful things.
@@ -35,7 +35,7 @@ giscus:
   reactions_enabled: "1"
   emit_metadata: "0"
   input_position: "bottom"
-  theme: "preferred_color_scheme"
+  theme: "dark"
   lang: "en"
 
 # Exclude from processing.

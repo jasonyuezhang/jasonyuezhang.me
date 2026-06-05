@@ -1,7 +1,18 @@
 ---
 ---
 
+$text-color:       #e0e0e0;
+$background-color: #121212;
+$brand-color:      #6cb4ff;
+$grey-color:       #888888;
+$grey-color-light: #2a2a2a;
+$grey-color-dark:  #f0f0f0;
+
 @import "minima";
+
+html {
+  color-scheme: dark;
+}
 
 .site-title,
 .site-title:visited {
@@ -14,6 +25,19 @@
 
 .post-content h2 {
   margin-top: 2rem;
+}
+
+pre,
+code {
+  background-color: #1e1e1e;
+}
+
+.highlight {
+  background: #1e1e1e;
+
+  .highlighter-rouge & {
+    background: #1e1e1e;
+  }
 }
 
 .comments {
