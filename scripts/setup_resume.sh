@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SITE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-TOOLKIT_DIR="${SITE_DIR}/resume_toolkit"
+RESUME_DIR="${SITE_DIR}/resume"
 
 python_bin=""
 for candidate in python3.13 python3.12 python3.11 python3; do
@@ -25,6 +25,6 @@ if [[ -z "${python_bin}" ]]; then
   exit 1
 fi
 
-cd "${TOOLKIT_DIR}"
+cd "${RESUME_DIR}"
 "${python_bin}" -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt

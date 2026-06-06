@@ -49,6 +49,14 @@ giscus:
 exclude:
   - README.md
   - Makefile
-  - resume_toolkit/
+  - resume/.venv/
+  - resume/outputs/
+  - resume/python_outputs/
+  - resume/README.md
+  - resume/build.sh
+  - resume/generate_resume.py
+  - resume/requirements.txt
+  - resume/resume.tex
+  - resume/resume_meta_propel.toml
   - scripts/
   - vendor/

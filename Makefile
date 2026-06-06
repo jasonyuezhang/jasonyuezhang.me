@@ -16,7 +16,7 @@ setup-resume:
 	./scripts/setup_resume.sh
 
 resume:
-	./resume_toolkit/build.sh
+	./resume/build.sh
 
 publish-resume:
 	./scripts/publish_resume.sh

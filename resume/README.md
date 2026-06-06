@@ -1,6 +1,6 @@
-# Resume Toolkit
+# Resume
 
-This directory contains the editable resume source for `jasonyuezhang.me`.
+This directory contains the editable resume source and public downloadable PDFs for `jasonyuezhang.me`.
 
 ## Files
 
@@ -27,7 +27,7 @@ From the site repo root:
 make resume
 ```
 
-Generated files are written to `resume_toolkit/outputs/` and ignored by Git.
+Generated files are written to `resume/outputs/` and ignored by Git.
 
 ## Publish To Site
 
@@ -37,10 +37,11 @@ From the site repo root:
 make publish-resume
 ```
 
-This builds the LaTeX resume and copies the latest generated PDF to:
+This builds the LaTeX resume, copies it to a timestamped public filename, and updates the latest symlink:
 
 ```text
-resume/jasonyuezhang_latest.pdf
+jasonyuezhang_YYYYMMDD_HHMMSS_001.pdf
+jasonyuezhang_latest.pdf -> jasonyuezhang_YYYYMMDD_HHMMSS_001.pdf
 ```
 
-That PDF is the public file linked from the site.
+The site links to `jasonyuezhang_latest.pdf`, so downloads always resolve to the latest published resume.

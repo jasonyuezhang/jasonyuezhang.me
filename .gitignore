@@ -7,13 +7,13 @@ vendor
 
 .DS_Store
 
-# Resume toolkit local environment and generated artifacts.
-resume_toolkit/.venv/
-resume_toolkit/outputs/
-resume_toolkit/python_outputs/
-resume_toolkit/*.aux
-resume_toolkit/*.xdv
-resume_toolkit/*.fls
-resume_toolkit/*.fdb_latexmk
-resume_toolkit/*.out
-resume_toolkit/*.toc
+# Resume local environment and generated artifacts.
+resume/.venv/
+resume/outputs/
+resume/python_outputs/
+resume/*.aux
+resume/*.xdv
+resume/*.fls
+resume/*.fdb_latexmk
+resume/*.out
+resume/*.toc

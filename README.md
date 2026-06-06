@@ -23,7 +23,7 @@ The script writes a dated Markdown file in `_posts/`. Add `CATEGORY=...` to over
 
 ## Resume
 
-Resume source lives in `resume_toolkit/`. The public site serves `resume/jasonyuezhang_latest.pdf`.
+Resume source and public downloadable PDFs both live in `resume/`. The public site serves `resume/jasonyuezhang_latest.pdf`, a symlink to the latest timestamped PDF.
 
 Install the local resume renderer dependencies once:
 
@@ -33,7 +33,7 @@ make setup-resume
 
 This requires Python 3.11+ and `tectonic`.
 
-Build the resume from `resume_toolkit/resume.tex`:
+Build the resume from `resume/resume.tex`:
 
 ```bash
 make resume
