@@ -1,0 +1,61 @@
+name = "Jason (Yue) Zhang"
+contact = "zhangyue1208@gmail.com | (858) 349-8335 | San Francisco, CA"
+summary = "Staff-level product engineer with 10+ years building large-scale applications, data products, and AI-driven workflows. Track record leading cross-functional initiatives, improving quality through code review and evaluation systems, and shipping measurable user and business impact."
+skills = "Go, Python, JavaScript/TypeScript, SQL | React, Databricks, BigQuery, Distributed Systems, AI Evaluation"
+transition_date = "Aug. 2025"
+
+[education]
+school = "University of California, San Diego"
+degree = "B.S., Computer Science and Engineering, 2013"
+
+[[experience]]
+company = "Propel Code"
+role = "Founding Software Engineer"
+location = "San Francisco, CA"
+start = "Aug. 2025"
+end = "Present"
+use_transition_start = true
+bullets = [
+  "Built an LLM-based code review product that has reviewed 200K PRs, improving developer feedback loops and code quality at scale.",
+  "Pioneered an evaluation system that improved review accuracy and enabled faster iteration on prompts, models, and product behavior.",
+  "Led migration of core review workflows from River to Temporal, improving reliability and making the product more resilient at scale.",
+  "Owned end-to-end delivery across backend services, product surfaces, and workflow infrastructure, turning ambiguous needs into shipped improvements.",
+]
+
+[[experience]]
+company = "Nextdoor"
+role = "Staff Software Engineer"
+location = "San Francisco, CA"
+start = "Jan. 2023"
+end = "Aug. 2025"
+use_transition_end = true
+bullets = [
+  "Led technical direction for Ads Measurement, owning architecture, roadmap, and execution across attribution, identity, and events systems.",
+  "Revamped the Conversion Attribution Platform, doubling adoption while improving attribution accuracy, usability, and advertiser trust.",
+  "Led user identification and events-management initiatives that increased identification rate 50%, supported 1K advertisers during platform migration, and unlocked 2-5% projected annual revenue impact.",
+  "Tech-led an Ads Reporting rebuild with Databricks, leading 3 engineers to launch a platform supporting 100+ report types and cutting support SLA from 5 to 2 business days.",
+  "Mentored 20+ engineers and partnered closely with PM, Design, Sales, GTM, and Data Science to prioritize and ship roadmap investments.",
+]
+
+[[experience]]
+company = "Twitter"
+start = "Jul. 2018"
+end = "Nov. 2022"
+
+[[experience.subroles]]
+role = "Senior Software Engineer, Signal Acquisition"
+location = "San Francisco, CA"
+bullets = [
+  "Led an offline signal acquisition and ML feature conversion platform that improved pConv precision by 2%.",
+  "Architected a JavaScript/Webpack pixel-tracking API that consolidated legacy integrations, reduced technical debt, and simplified future product development.",
+  "Saved $1M/year in infrastructure through data-driven debugging, targeted testing, and predictive analysis while improving team data governance.",
+  "Mentored newer engineers through technical presentations and context sharing on complex systems.",
+]
+
+[[experience.subroles]]
+role = "Software Engineer, SMB"
+location = "San Francisco, CA"
+bullets = [
+  "Built lead-generation and ML feature pipelines, including a MapReduce/Thrift/Vertica system that sourced 100K prospects and a media-classification pipeline that improved model accuracy 5%.",
+  "Developed internal product tools for marketing operations and led team adoption of BigQuery to modernize data workflows.",
+]

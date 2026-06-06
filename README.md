@@ -11,6 +11,40 @@ bundle exec jekyll serve
 
 Open <http://127.0.0.1:4000>.
 
+## Posts
+
+Create a new post from the site repo:
+
+```bash
+make post TITLE="My New Post"
+```
+
+The script writes a dated Markdown file in `_posts/`. Add `CATEGORY=...` to override the default `notes` category.
+
+## Resume
+
+Resume source lives in `resume_toolkit/`. The public site serves `resume/jasonyuezhang_latest.pdf`.
+
+Install the local resume renderer dependencies once:
+
+```bash
+make setup-resume
+```
+
+This requires Python 3.11+ and `tectonic`.
+
+Build the resume from `resume_toolkit/resume.tex`:
+
+```bash
+make resume
+```
+
+Build and publish the latest PDF into the Jekyll site:
+
+```bash
+make publish-resume
+```
+
 ## Publishing
 
 Push to `main`. The Pages workflow builds the Jekyll site and deploys `_site` as a GitHub Pages artifact.

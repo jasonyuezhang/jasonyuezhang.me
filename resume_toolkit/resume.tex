@@ -1,0 +1,128 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{mathptmx}
+\else
+  \usepackage{fontspec}
+  \setmainfont{Times New Roman}
+\fi
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.03}
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=3pt,
+  topsep=4pt,
+  partopsep=0pt,
+  parsep=0pt
+}
+
+\newcommand{\resumesection}[1]{
+  \vspace{10pt}
+  {\normalsize\bfseries\MakeUppercase{#1}\par}
+  \vspace{3pt}
+  \hrule
+  \vspace{7pt}
+}
+
+\newcommand{\companyheading}[2]{
+  \noindent\textbf{#1}\hfill\textbf{#2}\par
+}
+
+\newcommand{\roleheading}[2]{
+  \noindent\textit{#1}\hfill #2\par
+}
+
+\newcommand{\companysummary}[1]{
+  {\small #1\par}
+  \vspace{2pt}
+}
+
+\newcommand{\entryspace}{
+  \vspace{6pt}
+}
+
+\begin{document}
+
+{\LARGE \textbf{Jason (Yue) Zhang}\par}
+\vspace{4pt}
+{\normalsize
+\href{mailto:zhangyue1208@gmail.com}{zhangyue1208@gmail.com}
+\;|\;
+(858) 349-8335
+\;|\;
+San Francisco, California\par
+}
+
+\resumesection{Work Experience}
+
+\companyheading{Propel Code}{Aug. 2025 -- Present}
+\roleheading{Founding Software Engineer}{San Francisco, CA}
+\companysummary{Propel Code builds an LLM-based code review product for engineering teams to improve code quality and review velocity.}
+\begin{itemize}\small
+  \item Built an LLM-based code review product that has reviewed 200K PRs, improving developer feedback loops and code quality at scale.
+  \item Pioneered an evaluation system that improved review accuracy and enabled faster iteration on prompts, models, and product behavior.
+  \item Led migration of core review workflows from River to Temporal, improving reliability and making the product more resilient at scale.
+  \item Owned end-to-end delivery across backend services, product surfaces, and workflow infrastructure, turning ambiguous needs into shipped improvements.
+\end{itemize}
+\entryspace
+\normalsize
+
+\companyheading{Nextdoor}{Jan. 2023 -- Aug. 2025}
+\roleheading{Staff Software Engineer}{San Francisco, CA}
+\companysummary{Nextdoor is a hyperlocal social networking platform that fosters communication between neighbors and promotes local businesses within neighborhoods.}
+\begin{itemize}\small
+  \item Led technical direction for Ads Measurement, owning architecture, roadmap, and execution across attribution, identity, and events systems.
+  \item Revamped the Conversion Attribution Platform, doubling adoption while improving attribution accuracy, usability, and advertiser trust.
+  \item Led user identification and events-management initiatives that increased identification rate by 50\%, supported 1K advertisers during platform migration, and unlocked 2--5\% projected annual revenue impact.
+  \item Tech-led an Ads Reporting rebuild with Databricks, leading 3 engineers to launch a platform supporting 100+ report types and cutting support SLA from 5 to 2 business days.
+  \item Mentored 20+ engineers and partnered closely with PM, Design, Sales, GTM, and Data Science to prioritize and ship roadmap investments.
+\end{itemize}
+\entryspace
+\normalsize
+
+\companyheading{Twitter}{Jul. 2018 -- Nov. 2022}
+\companysummary{Twitter is a leading social media platform with billions in annual revenue and millions of active users, facilitating global real-time communication.}
+
+\roleheading{Senior Software Engineer -- Signal Acquisition | Jul. 2022 -- Nov. 2022}{San Francisco, CA}
+\begin{itemize}\small
+  \item Led an offline signal acquisition and ML feature conversion platform that improved pConv precision by 2\%.
+  \item Architected a JavaScript/Webpack pixel-tracking API that consolidated legacy integrations, reduced technical debt, and simplified future product development.
+  \item Saved \$1M/year in infrastructure through data-driven debugging, targeted testing, and predictive analysis while improving team data governance.
+  \item Mentored newer engineers through technical presentations and context sharing on complex systems.
+\end{itemize}
+\entryspace
+\normalsize
+
+\roleheading{Software Engineer -- SMB | Jul. 2018 -- Jul. 2022}{San Francisco, CA}
+\begin{itemize}\small
+  \item Led development of a lead generation solution that collected 100K sales prospects with MapReduce, Thrift, and Vertica, improving sales outreach effectiveness.
+  \item Designed and developed an ML feature preparation pipeline that integrated media classification annotation into business identification models and improved model accuracy by 5\%.
+  \item Developed internal product tools that automated daily operations for the Marketing team.
+  \item Advocated for and onboarded the team to BigQuery, helping migrate Python pipeline code and modernize data workflows.
+\end{itemize}
+\entryspace
+\normalsize
+
+\resumesection{Education}
+\companyheading{University of California, San Diego}{Mar. 2013}
+\textit{Bachelor of Science, Computer Science and Engineering}\par
+
+\resumesection{Technical Skills}
+{\small
+\textbf{Languages:} Go, Python, JavaScript/TypeScript, SQL \par
+\textbf{Product \& Data:} React, Databricks, BigQuery \par
+\textbf{Systems \& AI:} Distributed Systems, AI Evaluation, LLM Applications \par
+}
+
+\end{document}

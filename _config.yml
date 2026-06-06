@@ -41,4 +41,7 @@ giscus:
 # Exclude from processing.
 exclude:
   - README.md
+  - Makefile
+  - resume_toolkit/
+  - scripts/
   - vendor/

@@ -4,3 +4,16 @@ _site
 .jekyll-metadata
 vendor
 .bundle
+
+.DS_Store
+
+# Resume toolkit local environment and generated artifacts.
+resume_toolkit/.venv/
+resume_toolkit/outputs/
+resume_toolkit/python_outputs/
+resume_toolkit/*.aux
+resume_toolkit/*.xdv
+resume_toolkit/*.fls
+resume_toolkit/*.fdb_latexmk
+resume_toolkit/*.out
+resume_toolkit/*.toc
