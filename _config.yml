@@ -20,6 +20,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+
 permalink: /:year/:month/:day/:title/
 
 minima:
